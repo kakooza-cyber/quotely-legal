@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Copyright & Legal | Quotely</title>
+
+  <style>
+    :root {
+      --primary: #4A6FA5;
+      --background: #0f0f0f;
+      --card: #1a1a1a;
+      --text: #eaeaea;
+      --muted: #aaaaaa;
+      --radius: 14px;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .card {
+      background-color: var(--card);
+      padding: 18px;
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .contact {
+      margin-top: 10px;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>📜 Copyright & Legal</h1>
+    </header>
+
+    <div class="card">
+      <h2>📚 Public Domain Content</h2>
+      <p>
+        All ebooks available in the Quotely app are believed to be in the public
+        domain. Public domain works are free to read, share, and distribute
+        without restriction.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🌐 Ebook Sources</h2>
+      <p>Our ebooks are sourced from reputable open-access libraries such as:</p>
+      <ul>
+        <li>Project Gutenberg</li>
+        <li>Standard Ebooks</li>
+        <li>Internet Archive (Public Domain)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>⚖️ Copyright Disclaimer</h2>
+      <p>
+        Quotely does not claim ownership of any ebook content provided within
+        the app. All rights remain with the original authors or their estates,
+        where applicable.
+      </p>
+      <p>
+        We make every effort to ensure all materials are legally distributable.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>📩 Takedown Requests</h2>
+      <p>
+        If you believe any content in this app infringes copyright or has been
+        included in error, please contact us and we will promptly remove it.
+      </p>
+      <p class="contact">
+        Your can check out feedback in the about page or email us
+        Email: <a href="mailto:support@quotely.app">support@quotely.app</a>
+      </p>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Quotely. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+  </html>
