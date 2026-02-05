@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion Request</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 40px auto; padding: 20px; background-color: #f4f7f6; }
+        .container { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #d9534f; font-size: 24px; margin-bottom: 10px; }
+        p { margin-bottom: 20px; color: #666; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input[type="email"], select, textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        .warning { background: #fff3cd; color: #856404; padding: 15px; border-radius: 4px; border: 1px solid #ffeeba; margin-bottom: 20px; font-size: 14px; }
+        button { background-color: #d9534f; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%; }
+        button:hover { background-color: #c9302c; }
+        footer { text-align: center; margin-top: 20px; font-size: 12px; color: #999; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Delete Your Account</h1>
+    <p>We are sorry to see you go. Please fill out the form below to request the permanent deletion of your account and all associated data.</p>
+
+    <div class="warning">
+        <strong>Warning:</strong> This action is permanent. Once processed, your profile, settings, and all stored data will be deleted and cannot be recovered.
+    </div>
+
+    <form action="https://formspree.io/f/mnjbalzq" method="POST">
+        <div class="form-group">
+            <label for="email">Account Email Address</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reason">Why are you leaving? (Optional)</label>
+            <select id="reason" name="reason">
+                <option value="">Select a reason</option>
+                <option value="no-longer-use">I no longer use the app</option>
+                <option value="privacy">Privacy concerns</option>
+                <option value="bugs">Too many bugs/errors</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="confirm" required>
+                I confirm that I want to delete my account and all associated data.
+            </label>
+        </div>
+
+        <button type="submit">Submit Deletion Request</button>
+    </form>
+</div>
+
+<footer>
+    &copy; 2026 Your App Name. All rights reserved.
+</footer>
+
+</body>
+</html>
